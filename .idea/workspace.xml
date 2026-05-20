@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d549a100-8c2b-4511-9745-8a2269e406bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ordermanager/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ordermanager/annotations/OrderType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ordermanager/annotations/Validate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ordermanager/consumer/OrderConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ordermanager/manager/OrderManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ordermanager/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ordermanager/producer/OrderProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ordermanager/validator/OrderValidator.java" afterDir="false" />
+    <list default="true" id="b498b71c-4a79-4625-9631-07d21c8e1c97" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ordermanager/consumer/OrderConsumerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ordermanager/manager/OrderManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ordermanager/model/OrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ordermanager/producer/OrderProducerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ordermanager/validator/OrderValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ordermanager/manager/OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ordermanager/manager/OrderManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +24,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3Dzme07kYyBKt9ez0QMkdATXx7v" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,21 +47,94 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.All in task-manager.executor": "Coverage",
+    "JUnit.OrderConsumerTest.executor": "Run",
+    "JUnit.OrderConsumerTest.testConsumerProcessesOrder.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "mnogopotok",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Fraz1k/IdeaProjects/task-manager/src/main/java/com/ordermanager/Main.java"
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Fraz1k\Documents\GitHub\sberpraktik\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in task-manager">
+    <configuration name="All in task-manager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task-manager" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderConsumerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ordermanager.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ordermanager.consumer" />
+      <option name="MAIN_CLASS_NAME" value="com.ordermanager.consumer.OrderConsumerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderConsumerTest.testConsumerProcessesOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ordermanager.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ordermanager.consumer" />
+      <option name="MAIN_CLASS_NAME" value="com.ordermanager.consumer.OrderConsumerTest" />
+      <option name="METHOD_NAME" value="testConsumerProcessesOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in task-manager" />
+        <item itemvalue="JUnit.OrderConsumerTest" />
+        <item itemvalue="JUnit.OrderConsumerTest.testConsumerProcessesOrder" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d549a100-8c2b-4511-9745-8a2269e406bc" name="Changes" comment="" />
-      <created>1778875039134</created>
+      <changelist id="b498b71c-4a79-4625-9631-07d21c8e1c97" name="Changes" comment="" />
+      <created>1779293364983</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1778875039134</updated>
+      <updated>1779293364983</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sberpraktik$All_in_task_manager.ic" NAME="All in task-manager Coverage Results" MODIFIED="1779298767147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

@@ -76,6 +76,9 @@ public class OrderManager {
     public int getProcessedOrdersCount() {
         return processedOrders.size();
     }
+    public Order getProcessedOrder(String id) {
+        return processedOrders.get(id);
+    }
 
     public boolean isAllOrdersProcessed() {
         if (producer == null) return false;
